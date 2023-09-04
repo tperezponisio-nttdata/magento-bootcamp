@@ -14,9 +14,7 @@
 
         <referenceContainer name="left">
             <block class="NTTData\Employees\Block\Adminhtml\Employees\Tabs"
-                name="nttdata_employees_tabs">
-                <!-- <block class="Magento\Sales\Block\Adminhtml\Order\View\Tabs"
-                name="sales_order_tabs"> -->
+                name="nttdata_employees_tabs">                
                 <block class="NTTData\Employees\Block\Adminhtml\Employees\Tab\Info"
                     name="nttdata_employees_tab_info"
                     template="NTTData_Employees::view/tab/info.phtml">
