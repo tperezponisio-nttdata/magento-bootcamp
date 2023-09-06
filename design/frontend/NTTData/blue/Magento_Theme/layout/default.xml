@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/blue-styles.css" />
+    </head>
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/blue-logo.svg</argument>
+                <argument name="logo_height" xsi:type="string">150</argument>
+                <argument name="logo_width" xsi:type="string">150</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
     <referenceContainer name="footer-bottom-content">
         <block class="Magento\Framework\View\Element\Template" name="report.bugs.bottom"
             template="Magento_Theme::html/bugreport.phtml" />
