@@ -1,13 +1,7 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <head>
-        <!-- agrego estilos -->
-        <!-- <css src="css/blue-styles.css" /> -->
-
-    </head>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    
     <body>
-        <!-- remove -->
         <referenceBlock name="page.main.title" remove="false" />
         <referenceContainer name="product.info.main" remove="false" />
         <referenceBlock name="logo">
@@ -18,8 +12,9 @@
             </arguments>
         </referenceBlock>
     </body>
+    
+    
     <referenceContainer name="footer-bottom-content">
-        <block class="Magento\Framework\View\Element\Template" name="report.bugs.bottom"
-            template="Magento_Theme::html/bugreport.phtml" />
+        <block class="Magento\Framework\View\Element\Template" name="report.bugs.bottom" template="Magento_Theme::html/bugreport.phtml"/>
     </referenceContainer>
 </page>
