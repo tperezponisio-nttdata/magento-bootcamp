@@ -32,10 +32,10 @@
             <caption class="table-caption"><?= $block->escapeHtml(__('Shopping Cart Items')) ?></caption>
             <thead>
                 <tr>
-                    <th class="col item" scope="col"><span><?= $block->escapeHtml(__('DIEGO')) ?></span></th>
-                    <th class="col price" scope="col"><span><?= $block->escapeHtml(__('ARMANDO')) ?></span></th>
-                    <th class="col qty" scope="col"><span><?= $block->escapeHtml(__('MARADONA')) ?></span></th>
-                    <th class="col subtotal" scope="col"><span><?= $block->escapeHtml(__('D10S')) ?></span></th>
+                    <th class="col item" scope="col"><span><?= $block->escapeHtml(__('Item')) ?></span></th>
+                    <th class="col qty" scope="col"><span><?= $block->escapeHtml(__('Qty')) ?></span></th>
+                    <th class="col price" scope="col"><span><?= $block->escapeHtml(__('Price')) ?></span></th>
+                    <th class="col subtotal" scope="col"><span><?= $block->escapeHtml(__('Subtotal')) ?></span></th>
                 </tr>
             </thead>
             <?php foreach ($block->getItems() as $_item): ?>
@@ -70,9 +70,9 @@
                 name="update_cart_action"
                 data-cart-item-update=""
                 value="update_qty"
-                title="<?= $block->escapeHtml(__('Acá había un boton que no se que hacía, estoy rellenando con cualquier cosa')) ?>"
+                title="<?= $block->escapeHtml(__('Update Shopping Cart')) ?>"
                 class="action update">
-            <span><?= $block->escapeHtml(__('Acá había un boton que no se que hacía, estoy rellenando con cualquier cosa')) ?></span>
+            <span><?= $block->escapeHtml(__('Update Shopping Cart')) ?></span>
         </button>
         <input type="hidden" value="" id="update_cart_action_container" data-cart-item-update=""/>
     </div>

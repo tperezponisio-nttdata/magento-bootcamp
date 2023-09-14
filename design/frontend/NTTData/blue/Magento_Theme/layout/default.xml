@@ -6,9 +6,9 @@
         <referenceContainer name="product.info.main" remove="false" />
         <referenceBlock name="logo">
             <arguments>
-                <argument name="logo_file" xsi:type="string">images/blue-logo.svg</argument>
-                <argument name="logo_height" xsi:type="string">150</argument>
-                <argument name="logo_width" xsi:type="string">150</argument>
+                <argument name="logo_file" xsi:type="string">images/ntt-data-logo.svg</argument>
+                <!-- <argument name="logo_height" xsi:type="string">150</argument> -->
+                <argument name="logo_width" xsi:type="string">300</argument>
             </arguments>
         </referenceBlock>
     </body>
