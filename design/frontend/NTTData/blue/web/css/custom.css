@@ -1,9 +1,15 @@
 
 
-.page-wrapper {
-    background-color: rgb(199, 232, 253);
+/* .page-wrapper {
+    background-color: rgb(208, 239, 247);
+} */
+
+.sections {
+    font-size: 2em;
+    color: rgb(0, 51, 109);
+    background-color: rgb(rgb(248, 158, 84), green, blue);
 }
 
-.navigation {
-    font-size: 3em;
+.product-info-main {
+    background-color: #74a4c4;
 }

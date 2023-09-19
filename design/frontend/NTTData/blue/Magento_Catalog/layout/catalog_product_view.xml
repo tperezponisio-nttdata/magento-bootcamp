@@ -3,7 +3,7 @@
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <!-- muevo algunas cosas de lugar -->
-        <move element="product.info.stock.sku" destination="product.info.price"
+        <move element="product.info.stock.sku" destination="page.main.title"
             after="product.price.final" />
 
         <move element="product-add-form" destination="product.info.price"
