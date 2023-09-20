@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <body>
-        <!-- muevo algunas cosas de lugar -->
-        <move element="product.info.stock.sku" destination="page.main.title"
-            after="product.price.final" />
+  xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  
+  <body>
+    
+    <!-- muevo algunas cosas de lugar -->
+    <move element="product.info.stock.sku" destination="page.main.title"
+      after="product.price.final" />
 
-        <move element="product-add-form" destination="product.info.price"
-            after="product.price.final" />
+    <move element="product-add-form" destination="product.info.price"
+      after="product.price.final" />
 
-        <move element="page.main.title" destination="product.info.main" after="product.price.final" />
-        
-    </body>
-</page>
+    <move element="page.main.title" destination="product.info.main" after="product.price.final" />
+
+    <referenceContainer name="content">
+      <block class="Magento\Framework\View\Element\Template" name="sticky" template="Magento_Catalog::product/view/sticky.phtml" />
+    </referenceContainer>
+
+  </body>
+
+</page> 
