@@ -1,0 +1,48 @@
+<div id="multiselect" class="accordion">
+    <h2>Ejercicio 7.3 - Multiselect</h2>
+    <div class="select-example">
+        <select id="multiselect" name="multiselect-field" multiple="multiple">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+            <option value="6">Option 6</option>
+        </select>
+
+    </div>
+</div>
+
+<!--<script>-->
+<!--    require([-->
+<!--        'jquery',-->
+<!--        'mage/multiselect'-->
+<!--    ], function ($) {-->
+<!--        'use strict';-->
+<!--        $('#multiselect').multiselect2({});-->
+<!--    });-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    require([-->
+<!--        'jquery',-->
+<!--        'mage/multiselect'-->
+<!--    ], function ($) {-->
+<!--        'use strict';-->
+<!--        $(document).ready(function () {-->
+<!--            $('#multiselect').multiselect2({});-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+
+<script>
+    $(document).ready(function () {
+        require([
+            'jquery',
+            'mage/multiselect'
+        ], function ($) {
+            'use strict';
+            $('#multiselect').multiselect2({});
+        });
+    });
+</script>

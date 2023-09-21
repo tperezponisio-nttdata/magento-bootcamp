@@ -17,6 +17,7 @@
 
         <move element="page.main.title" destination="product.info.main" after="product.price.final"/>
 
+        <!-- sticky y carousel del ejercicio 7.2 -->
         <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template" name="sticky"
                    template="Magento_Catalog::product/view/sticky.phtml"/>
@@ -25,6 +26,22 @@
         <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template" name="carousel"
                    template="Magento_Catalog::product/view/carousel.phtml"/>
+        </referenceContainer>
+
+        <!-- los 3 archivos del ejercicio 7.3 -->
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="accordion"
+                   template="Magento_Catalog::product/view/accordion.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="modal"
+                   template="Magento_Catalog::product/view/modal.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="multiselect"
+                   template="Magento_Catalog::product/view/multiselect.phtml"/>
         </referenceContainer>
 
     </body>
