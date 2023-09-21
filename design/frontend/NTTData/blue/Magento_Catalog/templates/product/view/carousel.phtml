@@ -1,0 +1,127 @@
+
+<div id="carousel">
+    <h2>Carousel using the < script type="text/x-magento-init" > ... < /script > </h2>
+    <ul class="carousel1">
+        <li>
+            <img src="https://cdn.britannica.com/76/124976-050-E03E50CE/Diego-Maradona-1986.jpg" alt="Diego 1">
+        </li>
+        <li>
+            <img
+                src="https://conteudo.imguol.com.br/c/esporte/2e/2020/04/29/maradona-na-conquista-da-copa-do-mundo-fifa-de-1986-apos-o-episodio-da-la-mano-de-dios-1588180936935_v2_450x600.jpg"
+                alt="Diego 2">
+        </li>
+        <li>
+            <img src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2020/11/5fbe9bdadc9bb_450.jpg"
+                 alt="Diego 3">
+        </li>
+        <li>
+            <img src="https://www.ole.com.ar/images/2018/10/25/P2T33Kji3_860x575__1.jpg" alt="Diego 4">
+        </li>
+    </ul>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        ".carousel1": {
+            "slick": {
+                "dots": true,
+                "infinite": true,
+                "speed": 300,
+                "slidesToShow": 3,
+                "slidesToScroll": 1
+            }
+        }
+    }
+</script>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+<div id="carousel">
+    <h2>Carousel using the 'data-mage-init' attribute with a custom 'diego-carousel.js' file</h2>
+    <ul class="carousel2" data-mage-init='{
+                "diego-carousel": {}
+                }'>
+        <li>
+            <img src="https://cdn.britannica.com/76/124976-050-E03E50CE/Diego-Maradona-1986.jpg" alt="Diego 1">
+        </li>
+        <li>
+            <img
+                src="https://conteudo.imguol.com.br/c/esporte/2e/2020/04/29/maradona-na-conquista-da-copa-do-mundo-fifa-de-1986-apos-o-episodio-da-la-mano-de-dios-1588180936935_v2_450x600.jpg"
+                alt="Diego 2">
+        </li>
+        <li>
+            <img src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2020/11/5fbe9bdadc9bb_450.jpg"
+                 alt="Diego 3">
+        </li>
+        <li>
+            <img src="https://www.ole.com.ar/images/2018/10/25/P2T33Kji3_860x575__1.jpg" alt="Diego 4">
+        </li>
+    </ul>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+<div id="carousel">
+    <h2>Carousel using the 'data-mage-init' attribute with slick carousel</h2>
+    <ul class="carousel3" data-mage-init='{
+                 "slick":{
+                    "dots": true,
+                    "infinite": true,
+                    "speed": 300,
+                    "slidesToShow": 3,
+                    "slidesToScroll": 1
+                 }}'>
+        <li>
+            <img src="https://cdn.britannica.com/76/124976-050-E03E50CE/Diego-Maradona-1986.jpg" alt="Diego 1">
+        </li>
+        <li>
+            <img
+                src="https://conteudo.imguol.com.br/c/esporte/2e/2020/04/29/maradona-na-conquista-da-copa-do-mundo-fifa-de-1986-apos-o-episodio-da-la-mano-de-dios-1588180936935_v2_450x600.jpg"
+                alt="Diego 2">
+        </li>
+        <li>
+            <img src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2020/11/5fbe9bdadc9bb_450.jpg"
+                 alt="Diego 3">
+        </li>
+        <li>
+            <img src="https://www.ole.com.ar/images/2018/10/25/P2T33Kji3_860x575__1.jpg" alt="Diego 4">
+        </li>
+    </ul>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+<div id="carousel">
+    <h2>Carousel using Imperative notation </h2>
+    <ul class="carousel4">
+        <li>
+            <img src="https://cdn.britannica.com/76/124976-050-E03E50CE/Diego-Maradona-1986.jpg" alt="Diego 1">
+        </li>
+        <li>
+            <img
+                src="https://conteudo.imguol.com.br/c/esporte/2e/2020/04/29/maradona-na-conquista-da-copa-do-mundo-fifa-de-1986-apos-o-episodio-da-la-mano-de-dios-1588180936935_v2_450x600.jpg"
+                alt="Diego 2">
+        </li>
+        <li>
+            <img src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2020/11/5fbe9bdadc9bb_450.jpg"
+                 alt="Diego 3">
+        </li>
+        <li>
+            <img src="https://www.ole.com.ar/images/2018/10/25/P2T33Kji3_860x575__1.jpg" alt="Diego 4">
+        </li>
+    </ul>
+</div>
+
+<script>
+    require(['jquery', 'slick'], function ($) {
+        $(document).ready(function () {
+            $(".carousel4").slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+        });
+    });
+</script>

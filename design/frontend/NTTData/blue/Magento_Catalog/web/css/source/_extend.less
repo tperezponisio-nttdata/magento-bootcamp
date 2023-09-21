@@ -1,7 +1,7 @@
 @import "backgrounds.less";
 @import "title.less";
 
-#accordion {
+.accordion {
   background-color: white;
   padding: 10px;
   border-style: solid;
@@ -9,7 +9,6 @@
   border-radius: 5px;
   margin-bottom: 20px;
 
-  // Style the <h2> and <h4> elements inside of the #accordion element
   h2,
   h4 {
     color: black;
@@ -27,4 +26,27 @@
   h4:hover {
     cursor: pointer;
   }
+}
+
+#carousel {
+  background-color: white;
+  padding: 10px;
+  border-style: solid;
+  border-color: darkred;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+:root {
+  --image-height: 200px;
+}
+
+#carousel img {
+  height: var(--image-height);
 }

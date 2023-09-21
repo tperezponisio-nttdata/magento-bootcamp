@@ -17,6 +17,10 @@
       <block class="Magento\Framework\View\Element\Template" name="sticky" template="Magento_Catalog::product/view/sticky.phtml" />
     </referenceContainer>
 
+    <referenceContainer name="content">
+      <block class="Magento\Framework\View\Element\Template" name="carousel" template="Magento_Catalog::product/view/carousel.phtml" />
+    </referenceContainer>
+
   </body>
 
 </page> 
